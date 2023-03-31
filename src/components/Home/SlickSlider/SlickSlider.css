@@ -1,0 +1,4 @@
+.slick-dots li button{
+    color: none !important;
+    visibility:hidden !important;
+}

@@ -1,32 +1,31 @@
-import React from "react";
-import { Card, } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import cox from '../../components/assets/images/cox.jpg'
+import React, { useEffect, useState } from "react";
+import "./Home.css";
+import SlickSlider from "./SlickSlider/SlickSlider";
 
 const Home = () => {
+  const [photos, setPhotos] = useState([]);
+  useEffect(() => {
+    fetch("photodata.json")
+      .then((res) => res.json())
+      .then((data) => setPhotos(data));
+  }, []);
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-lg-4 d-flex flex-column justify-content-center ">
-          <h1>COX'S BAZAR</h1>
+    <div className="main-home">
+      <div className="title-items">
+
+        <div className="d-flex align-items-center flex-column justify-content-center">
+          <h2>Lorem ipsum dolor sit amet consectetur.</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis,
-            quaerat.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+            possimus voluptatibus fuga esse eos, exercitationem ratione
+            accusantium impedit quaerat amet?
           </p>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <button className="w-50">BOOK Now</button>
-        </div>
-        <div className="col-lg-8 d-flex flex-column justify-content-center ">
-          <Card style={{ width: "18rem" }}>
-            {/* <Link to='/about'><img src={cox} alt="" /></Link> */}
-            <Link to="/ about"><img className="img-fluid" src={cox} alt="" />
-            <h1>COX'S BAZAR</h1>
-            </Link>
-            
-          </Card>
-          
         </div>
       </div>
+
+        <div className="w-100 overflow-hidden">
+          <SlickSlider></SlickSlider>
+        </div>
     </div>
   );
 };

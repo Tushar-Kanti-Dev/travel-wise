@@ -1,8 +1,9 @@
 .app{
   background-image: url("/src/components/assets/images/homebg.jpg");
   width: 100%;
-  height: auto;
+  height: 200vh;
   object-fit: cover;
   background-repeat: no-repeat;
   background-color: black;
 }
+

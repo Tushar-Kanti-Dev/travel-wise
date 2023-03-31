@@ -1,0 +1,10 @@
+.main-home{
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr) */
+    grid-template-columns: 40% 2fr;
+    place-items: center
+}
+.title-items{
+    width: 70%;
+    
+}

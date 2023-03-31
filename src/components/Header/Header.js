@@ -1,5 +1,6 @@
 import React from "react";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
+import CustomLink from "../CustomLink/CustomLink";
 import './Header.css';
 
 const Header = () => {
@@ -14,13 +15,12 @@ const Header = () => {
             
           </Nav>
           <Nav className="text-center">
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
-            </Nav.Link>
+            <div className="navbar-items">
+            <CustomLink to='/'>Home</CustomLink>
+            <CustomLink to='/about'>About</CustomLink>
+            <CustomLink to='/slick'>Slick</CustomLink>
+            {/* <CustomLink to='/swiper'>Swiper</CustomLink> */}
+            </div>
           </Nav>
         </Navbar.Collapse>
       </Container>

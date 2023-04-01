@@ -20,6 +20,7 @@ const Header = () => {
             <CustomLink to='/about'>About</CustomLink>
             <CustomLink to='/slick'>Slick</CustomLink>
             {/* <CustomLink to='/swiper'>Swiper</CustomLink> */}
+            <CustomLink to='/login'>Login</CustomLink>
             </div>
           </Nav>
         </Navbar.Collapse>

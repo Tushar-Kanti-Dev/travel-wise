@@ -56,10 +56,10 @@ const SlickSlider = () => {
         }
       </Slider>
       <div className='controls'>
-        <button onClick={()=> slider.current.slickPrev()}>
+        <button onFocus={()=> slider.current.slickPrev()}>
           <BsArrowLeftCircle />
         </button>
-        <button onClick={()=> slider.current.slickNext()}>
+        <button onFocus={()=> slider.current.slickNext()}>
           <BsArrowRightCircle />
         </button>
       </div>

@@ -1,0 +1,15 @@
+.login-fname{
+    border: none !important;
+	border-bottom: 2px solid #D1D1D4 !important;
+	background: none !important;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 75%;
+	transition: .2s;
+    
+}
+.login-fname:active{
+    outline: none !important;
+    border-bottom-color: #6A679E !important;
+}
